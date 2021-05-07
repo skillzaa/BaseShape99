@@ -1,9 +1,9 @@
 import ArrayOfObjects from '../node_modules/@bilzaa.com/arrayofobjects/dist/ArrayOfObjects.js';
 
 import Generators from '../node_modules/aninumber/dist/Generators.js';
+import IBaseShape from "./IBaseShape";
 
-
-export default class BaseShape{  
+export default class BaseShape implements IBaseShape {  
 public attributes:ArrayOfObjects; 
 animations: object[];
 protected generators:InstanceType<typeof Generators>;
